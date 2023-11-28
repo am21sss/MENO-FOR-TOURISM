@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saudi cities</title>
+        <link rel="stylesheet" href="Projctstyle.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="cont">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="html1.html">Home</a></li>
+                    <li><a href="Members.html">About us</a></li>
+                    <li><a href="html3.html">Riyadh</a></li>
+                    <li><a href="html4.html">Tabuk</a></li>
+                    <li><a href="html2.html">Jeddah</a></li>
+                    <li><a href="Login.html">Connect with us</a></li>
+                </ul>
+            </nav>
+           
+            <table>
+                <tr>
+                  <th>From</th>
+                  <th>To</th>
+                  <th>Time</th>
+
+                </tr>
+                <tr>
+                  <td>Tabuk</td>
+                  <td> Riyadh</td>
+                  <td>10:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Tabuk</td>
+                    <td> Jeddah</td>
+                    <td>12:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Jeddah</td>
+                    <td> Riyadh</td>
+                    <td>9:30 pm</td>
+                </tr>
+                <tr>
+                    <td>Jeddah</td>
+                    <td> Tabuk</td>
+                    <td>6:45 am</td>
+                </tr>
+                <tr>
+                    <td>Riyadh</td>
+                    <td> Tabuk</td>
+                    <td>1:45 pm</td>
+                </tr>
+                <tr>
+                    <td>Riyadh</td>
+                    <td> Jeddah</td>
+                    <td>10:45 am</td>
+                </tr>
+              </table>
+            
+            <h1>Where would you like to go ?</h1>
+            <div class="flight">
+                <div class="img">
+                    <img src="images/flight.png" alt="">
+                </div>
+                <form action="Reservation1.html">
+
+                    <label for="From">
+                      <b>From:</b>  
+                    </label>
+                    <input type="text" name="From">
+
+                    <label for="TO">
+                        <b>To:</b>
+                    </label>
+                    <input type="text" name="TO">
+
+                    <label for="date">
+                        <b>Date:</b>
+                    </label>
+                    <input type="datetime-local" name="date">
+
+
+                    
+
+                    <label for="Person"> <b>Passenger:</b></label>
+                            <select name="Person" id="Person">
+                                <option value="1 Passenger">1 Passenger</option>
+                                <option value="2 Passenger">2 Passenger</option>
+                                <option value="3 Passenger">3 Passenger</option>
+                                <option value="4 Passenger">4 Passenger</option>
+                                <option value="5 Passenger">5 Passenger</option>
+                                <option value="6 Passenger">6 Passenger</option>
+                                <option value="7 Passenger">7 Passenger</option>
+                                <option value="8 Passenger">8 Passenger</option>
+                            </select>
+
+
+                     <input type="submit" value="Submit" style="cursor: pointer;">       
+                </form>
+            </div>
+
+
+        </div>
+    </body>
+</html>

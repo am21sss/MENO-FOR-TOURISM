@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saudi cities</title>
+        <link rel="stylesheet" href="Projctstyle.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            alert(ValidateForm())
+            function ValidateForm(){
+                let fname = document.forms['login']['fname'].value;
+                let lname = document.forms['login']['lname'].value;
+                if (fname == "" || lname == "") {
+                    alert("Name must be filled out!");
+                    return false;
+                }
+
+                let email = document.forms['login']['email'].value;
+                var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                if (!email.match(validRegex)) {
+                    alert("Invalid email address!");
+                    return false;
+                }
+
+                let password = document.forms['login']['pass'].value;
+                if (password.length < 8) {
+                    alert("Invalid password!");
+                    return false;
+                }
+            }
+        </script>
+
+    </head>
+    
+    <body>
+        <div class="cont">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="html1.html">Home</a></li>
+                    <li><a href="Members.html">About us</a></li>
+                    <li><a href="html3.html">Riyadh</a></li>
+                    <li><a href="html4.html">Tabuk</a></li>
+                    <li><a href="html2.html">Jeddah</a></li>
+                </ul>
+                <button class="btn"><img src="images/icon.png.png" ><a href="Reservation.html">Reservation</a></button>
+            </nav>
+          
+
+            
+            <div class="Login">
+                <div class="img">
+                    <img src="images/Login_page.png" alt="">
+                </div>
+               
+                <div class="form">
+
+                    <form method="post" action="Login1.html" onsubmit="return ValidateForm()" id="login" name="form1">
+
+                        <label for="fname"><b>First name:</b></label>
+                        <input type="text" name="fname"  placeholder="Enter your First name">
+
+                        <label for="lname"><b>Last name:</b></label>
+                        <input type="text" name="lname" placeholder="Enter your Last name">
+
+                        <label for="email"><b>Email :</b></label>
+                        <input type="email"  placeholder="Enter your email" name="email" >
+    
+                        <label for="pass"><b>Password :</b></label>
+                        <input type="password" name="pass"  placeholder="Enter your Password" >
+
+                        <label for="message"><b>Comments :</b><br></label>
+                        <textarea name="message" id="message" cols="50" rows="10"></textarea>
+                        <br>
+                        <input type="submit" value="Submit" style="cursor: pointer;">
+                    </form>
+
+                    <h6>Or Connect with us with: </h6>
+
+                    <div class="bottom">
+                   
+                        <div class="box">
+                            <a href="https://www.facebook.com/"><img src="images/facebook.png" width="100%" height="100%">  </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+               
+            </div>
+        </div>
+    </body>
+</html>

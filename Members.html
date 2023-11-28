@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saudi cities</title>
+        <link rel="stylesheet" href="Projctstyle.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="cont">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="html1.html">Home</a></li>
+                    <li><a href="html3.html">Riyadh</a></li>
+                    <li><a href="html4.html">Tabuk</a></li>
+                    <li><a href="html2.html">Jeddah</a></li>
+                    <li><a href="Login.html">Connect with us</a></li>
+                </ul>
+                <button class="btn"><img src="images/icon.png.png" ><a href="Reservation.html">Reservation</a></button>
+            </nav>
+          
+
+            
+            <div class="Login">
+
+                <div class="img">
+                    <img src="images/team.png" alt="">
+                </div>
+
+                    <ul id="Shuffle" class="members">
+                        <li class="member">
+                            <h2>شهد عبدالله يسلم</h2>
+                            <img src="images/member.png" alt="" >
+    
+                        </li>
+    
+                        <li class="member">
+                            <h2>شهد عبدالباسط المصعبي</h2>
+                            <img src="images/member.png" alt="" >
+                        </li>
+    
+                        <li class="member">
+                            <h2>أسماء علي مهيوب</h2>
+                            <img src="images/member.png" alt="" >
+    
+                        </li>
+    
+                        <li class="member">
+                            <h2>أميرة صبحي</h2>
+                            <img src="images/member.png" alt="" >
+    
+                        </li>
+                    </ul>
+                   
+                
+                
+               
+            </div>
+
+
+        </div>
+        <script>
+            var grd = document.getElementById('Shuffle');
+            var imgs = grd.children;
+            
+            imgs_arr = Array.from(imgs)
+            imgs_arr.sort(function(){
+              return (Math.round(Math.random()) - 0.5);
+            });
+            console.log(imgs_arr)
+            for(var i=0; i < imgs_arr.length; i++)grd.append(imgs_arr[i]);
+            
+            
+            </script>
+        
+    </body>
+</html>
